@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7be40c0d-195d-4c8d-857a-d413c88be257" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Operators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Day1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Day2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Day3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Day1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Day2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Day3Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Day2Test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PairTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Day3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Day3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Day3Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -41,9 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2YxZ2akQZ4XFoswuahxk27fRN52" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -64,6 +52,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "vue.rearranger.settings.migration": "true"
   }
@@ -77,13 +66,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Day3">
-    <configuration name="Day2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day2" />
-      <module name="advent-of-code" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Day3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day3" />
       <module name="advent-of-code" />
@@ -91,21 +73,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day2Test.gameCounterShouldReturnCorrectSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day3Test.gearCheckerShouldReturnCorrectResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="advent-of-code" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day2Test" />
-      <option name="METHOD_NAME" value="gameCounterShouldReturnCorrectSum" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day2Test.powerCounterShouldReturnCorrectResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="advent-of-code" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day2Test" />
-      <option name="METHOD_NAME" value="powerCounterShouldReturnCorrectResult" />
+      <option name="MAIN_CLASS_NAME" value="Day3Test" />
+      <option name="METHOD_NAME" value="gearCheckerShouldReturnCorrectResult" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,13 +93,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PairTest.pairShouldBeMutable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="advent-of-code" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PairTest" />
+      <option name="METHOD_NAME" value="pairShouldBeMutable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PairTest.pairWithPairConstructorShouldBeDifferentPairs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="advent-of-code" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PairTest" />
+      <option name="METHOD_NAME" value="pairWithPairConstructorShouldBeDifferentPairs" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Day3" />
+        <item itemvalue="JUnit.Day3Test.gearCheckerShouldReturnCorrectResult" />
         <item itemvalue="JUnit.Day3Test.partCheckerShouldReturnCorrectSum" />
-        <item itemvalue="Application.Day2" />
-        <item itemvalue="JUnit.Day2Test.powerCounterShouldReturnCorrectResult" />
-        <item itemvalue="JUnit.Day2Test.gameCounterShouldReturnCorrectSum" />
+        <item itemvalue="JUnit.PairTest.pairWithPairConstructorShouldBeDifferentPairs" />
+        <item itemvalue="JUnit.PairTest.pairShouldBeMutable" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +132,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701468986092</updated>
       <workItem from="1701468987223" duration="36177000" />
+      <workItem from="1701705730626" duration="22339000" />
     </task>
     <servers />
   </component>
@@ -178,6 +171,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/Day2.java</url>
           <line>99</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Day3.java</url>
+          <line>192</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Day3.java</url>
+          <line>246</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
